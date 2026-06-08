@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifólio ✦</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <section class="tela_inicial">
+        <div class="item texto_em_cima" id="t-compsci">compsci student</div>
+        <div class="item texto_em_cima" id="t-portfolio">portfólio</div>
+        
+        <div class="dropdown" id="t-social-media">
+            <button class="dropdown-btn" onclick="toggleDropdown()">social media</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="https://www.linkedin.com/in/gabriellaalbq/" target="_blank">linkedIn</a>
+                <a href="https://github.com/gabriellalbq" target="_blank">github</a>
+                <a href="mailto:gla3@cesar.school">e-mail</a>
+            </div>
+        </div>
+
+        <div class="item" id="f-compsci">
+            <div class="folder"></div>
+            <span>portifolio</span>
+        </div>
+
+        <div class="item" id="cesarschool">
+            <div class="imagem"></div>
+            <span>cesar_school.jpeg</span>
+        </div>
+
+        <div class="item" id="filepython">
+            <div class="purplefolder"></div>
+            <span>python</span>
+        </div>
+
+        <div class="item" id="cpplang">
+            <div class="pinkfolder"></div>
+            <span>c++</span>
+        </div>
+
+        <div class="item" id="arq">
+            <div class="folder"></div>
+            <span>arquétipo.zip</span>
+        </div>
+
+        <div class="item" id="arduino">
+            <div class="imagem"></div>
+            <span>arduino.png</span>
+        </div>
+
+        <div class="container_meio">
+            <div class="portifolio_loc">
+                <div class="titulo_main">portfólio</div>
+            </div>
+            <div class="pastaprincipal"></div>
+        </div>
+    </section> 
+    
+    <div class='container_apresentacao'>
+        <div class="container_texto_apresentacao">
+            <div class="texto_container_apresentacao">
+                <h2 class="titulo_container_apresentacao">Hello, World!</h2>
+                <h3 class="me_chamo_apresentacao">Me chamo</h3>
+                <h1 class="nome_container_apresentacao">Gabriella!</h1>
+                <p class="biografia">
+                    E atualmente curso <b>Ciência da Computação</b> na <b>CESAR School</b>. Sou uma estudante no primeiro ano do meu bacharelado e estou completamente aberta a explorar as diversas possibilidades que a tecnologia pode me proporcionar! Gosto de explorar minha criatividade e raciocínio lógico para criar códigos e soluções inovadoras. Além disso, flerto bastante com a área de design por gostar muito desse universo, estando super aberta a trabalhar em áreas que exijam criatividade e o alinhamento entre a estética e a tecnologia.
+                </p>
+            </div>
+            <div class="container_botoes_in_mail">
+                <a href="https://github.com/gabriellalbq" target="_blank" class="botao_in_mail">GitHub</a>
+                <a href="https://www.linkedin.com/in/gabriellaalbq/" target="_blank" class="botao_in_mail">Linkedin</a>
+            </div>
+            <a href="saibamais.html" class="botao_sobre_mim">Sobre mim</a>
+        </div>
+
+        <img src="foto.jpg" alt="Gabriella de Lima Albuquerque" class="foto_apresentacao">
+    </div>
+
+    <section class="container_habilidades">
+        <h2 class="titulo_habilidades">Habilidades;</h2>
+        
+        <div class="alinhar_habilidades">
+            <div class="coluna_habilidades">
+                <h3 class="titulo_coluna_hab">Linguagens de programação:</h3>
+                <ul class="lista_hab">
+                    <li>Python;</li>
+                    <li>C;</li>
+                    <li>C++;</li>
+                    <li>JavaScript.</li>
+                </ul>
+            </div>
+
+            <div class="coluna_habilidades">
+                <h3 class="titulo_coluna_hab">Ferramentas:</h3>
+                <ul class="lista_hab">
+                    <li>Git;</li>
+                    <li>GitHub;</li>
+                    <li>Arduino;</li>
+                    <li>Figma;</li>
+                    <li>VS code.</li>
+                </ul>
+            </div>
+
+            <div class="coluna_habilidades">
+                <h3 class="titulo_coluna_hab">Soft skills:</h3>
+                <ul class="lista_hab">
+                    <li>Liderança;</li>
+                    <li>Comunicação eficaz;</li>
+                    <li>Criatividade;</li>
+                    <li>Colaboração;</li>
+                    <li>Flexibilidade.</li>
+                </ul>
+            </div>
+
+            <div class="coluna_habilidades">
+                <h3 class="titulo_coluna_hab">Outros:</h3>
+                <ul class="lista_hab">
+                    <li>HTML5;</li>
+                    <li>CSS.</li>
+                </ul> </div>
+        </div>
+    </section>
+
+    <section class="container_projetos">
+        <h2 class="titulo_secao_projetos">Meus projetos;</h2>
+        
+        <div class="lista_projetos">
+            <div class="card_projeto">
+                <div class="icone_projeto arquetipo"><span>Py</span></div>
+                <h3 class="nome_projeto">Arquétipo</h3>
+                <p class="descricao_projeto">Projeto acadêmico para a cadeira de Fundamentos da Programação, em que uni front e back end para desenvolver um site para organizar e evoluir na vida fitness.</p>
+                <a href="https://github.com/gabriellalbq/Arquetipo" target="_blank" class="botao_projeto">Visualizar código</a>
+            </div>
+
+            <div class="card_projeto">
+                <div class="icone_projeto manguetown"><span>C++</span></div>
+                <h3 class="nome_projeto">Manguetown</h3>
+                <p class="descricao_projeto">Projeto para a cadeira de Projetos 1, em que desenvolvi um código em C/C++ para um arduíno conectado a um jogo físico de tabuleiro. Saiba mais clicando
+                    <a href="manguetown.html" class="saibamaisbotao">aqui</a>
+                .
+                </p>
+                <a href="https://github.com/gabriellalbq/Manguetown" target="_blank" class="botao_projeto">Visualizar código</a>
+            </div>
+
+            <div class="card_projeto">
+                <div class="icone_projeto climatempo"><span>JS</span></div>
+                <h3 class="nome_projeto">clima&tempo</h3>
+                <p class="descricao_projeto">Projeto independente desenvolvido para facilitar o acesso às informações sobre clima e tempo atuais.</p>
+                <a href="#" class="botao_projeto">Visualizar Código</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_conteudo">
+            <span class="autor_titulo">Feito por:</span>
+            <div class="autor_linha">
+                <p>Gabriella de Lima Albuquerque</p>
+                <a href="mailto:gla3@cesar.school" class="links"><img src="fotos/gmail.png" alt="Gmail" class="img_gmail"></a>
+                <a href="https://www.linkedin.com/in/gabriellaalbq/" class="links"><img src="fotos/linkedin.png" alt="linkedin" class="img_gmail"></a>
+            </div> </div> 
+    </footer>
+
+</body>
+</html>
