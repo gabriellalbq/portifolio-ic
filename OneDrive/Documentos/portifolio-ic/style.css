@@ -101,7 +101,7 @@ body {
 .imagem {
     width: 55px;
     height: 70px;
-    background-color: #ddd;
+    background-color: #c4e2a5;
     border: 1px solid #ccc;
     box-shadow: 0 4px 6px rgba(0,0,0,0.08);
     background-size: cover;
@@ -112,6 +112,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     color: #1a1a1a;
+    animation: none;
 }
 
 #t-compsci { top: 4%; left: 4%; }
@@ -185,17 +186,37 @@ body {
     pointer-events: auto;
 }
 
-#f-compsci { top: 26%; left: 16%; }
+#f-compsci { 
+    top: 26%; left: 16%; 
+    animation-delay: 0s; 
+}
 
-#cesarschool { top: 52%; left: 14%; }
+#cesarschool { 
+    top: 52%; left: 14%; 
+    animation-delay: 0.5s;
+    animation-duration: 3.8s;
+}
 
-#filepython { top: 75%; left: 24%; }
+#filepython { 
+    top: 75%; left: 24%; 
+    animation-delay: 1.2s; 
+}
 
-#cpplang { top: 18%; right: 26%; }
+#cpplang { 
+    top: 18%; right: 26%; 
+    animation-delay: 0.2s; 
+    animation-duration: 4.2s; 
+}
 
-#arq { top: 32%; right: 17%; }
+#arq { 
+    top: 32%; right: 17%; 
+    animation-delay: 1.8s; 
+}
 
-#arduino { top: 58%; right: 16%; }
+#arduino { 
+    top: 58%; right: 16%; 
+    animation-delay: 0.8s; 
+}
 
 #img-real-estate { top: 76%; right: 23%; }
 #img-real-estate .image-thumb { width: 75px; height: 50px; background-image: linear-gradient(#2b2d42, #8d99ae); }
@@ -762,7 +783,6 @@ footer {
     color: #333333;
 }
 
-
 .coluna_direita {
     flex: 0 0 50%;
     display: flex;
@@ -771,8 +791,8 @@ footer {
 }
 
 .moldura_foto {
-    background-color: #ffffff;
-    border: 2px solid #85bddd; 
+    background-color: #ffffff00;
+    border: 2px solid #e1c4ff; 
     border-radius: 12px;
     padding: 15px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -795,4 +815,61 @@ footer {
     color: #666666;
     text-align: center;
     margin-top: 12px;
+}
+
+.foto_manguetown {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 200px;
+    margin-left: -200px;
+}
+
+.texto_direita_manguetown{
+    margin-left: 300px;
+    font-size: 19px;
+}
+
+::selection {
+  background-color: #b785dd; 
+  color: #ffffff;
+}
+
+.flutuar {
+    animation: flutuando 4s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes flutuando {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.flutuar2 {
+    animation: flutuando 4s ease-in-out infinite;
+    display: inline-block;
+    animation-delay: 0.8s;
+}
+
+.setinha {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 10;
 }
